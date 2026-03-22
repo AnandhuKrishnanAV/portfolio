@@ -81,6 +81,7 @@ export function ProjectCaseModal({ project, onClose }: ProjectCaseModalProps) {
           className="relative my-auto w-full max-w-3xl rounded-2xl border border-white/[0.1] bg-[#0a0e17] shadow-[0_0_0_1px_rgba(255,255,255,0.04)_inset,0_25px_80px_-20px_rgba(0,0,0,0.8)] outline-none"
           initial={{ y: 24, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
+          exit={{ y: 16, opacity: 0 }}
           transition={{ type: "spring", damping: 26, stiffness: 320 }}
           onClick={(e) => e.stopPropagation()}
         >

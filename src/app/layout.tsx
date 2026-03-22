@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
+import { SitePageLoader } from "@/components/SitePageLoader";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -19,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={GeistSans.variable}>
-      <body className={`${GeistSans.className} font-sans`}>{children}</body>
+      <body className={`${GeistSans.className} font-sans`}>
+        <SitePageLoader>{children}</SitePageLoader>
+      </body>
     </html>
   );
 }

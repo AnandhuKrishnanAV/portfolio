@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        "loader-marquee": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+      animation: {
+        "loader-marquee": "loader-marquee 24s linear infinite",
+      },
       colors: {
         canvas: "#0a0e17",
         accent: "#5eead4",
