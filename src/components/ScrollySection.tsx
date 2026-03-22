@@ -20,7 +20,7 @@ export function ScrollySection() {
   return (
     <section ref={sectionRef} className="relative h-[500vh] w-full">
       <div className="sticky top-0 z-[14] h-screen w-full overflow-hidden bg-[var(--backgroundColor)]">
-        <ScrollyCanvas sectionRef={sectionRef} scrollYProgress={scrollYProgress} />
+        <ScrollyCanvas scrollYProgress={scrollYProgress} />
         <Overlay scrollYProgress={scrollYProgress} />
 
         <motion.div
